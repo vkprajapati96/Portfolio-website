@@ -6,6 +6,11 @@
   box-sizing:border-box;
   scroll-behavior:smooth;
 }
+:root{
+  --primary-color: aqua;
+
+}
+
 a{
   text-decoration: none ;
   color:#fff;
@@ -13,6 +18,7 @@ a{
 }
 ul{
   list-style:none;
+
 }
 img{
   max-width: 100%;
@@ -64,7 +70,7 @@ body{
 }
 
 .logo .fa-bolt {
-  color: #fed700;
+  color:var(--primary-color);
   font-size: 19.5px;
   position: absolute; 
   top: 60%;
@@ -85,6 +91,7 @@ body{
 
 .header ul{
   display: flex;
+  gap: 20px;
   align-items: center; 
 }
 .header ul li{
@@ -95,10 +102,10 @@ body{
   display: block;
 }
 .header ul li a.active{
-  color: #fed700;
+  color: var(--primary-color);
 } 
 .header ul li a:hover{
-  color:#fed700;
+  color:var(--primary-color);
 }
 .header .menu_icon{
   color:#fff;
@@ -147,7 +154,7 @@ profile-photo .img{
   font-size: 14px;
 }
 .profile-text h1{
-  color: #fed700;
+  color: var(--primary-color);
   font-size: 3rem; 
 }
 .profile-text p{
@@ -160,7 +167,7 @@ profile-photo .img{
   transition: 0.5s;
 }
 .profile-text .social i:hover{
-  color:#fed700;
+  color:var(--primary-color);
   transform: rotate(360deg);
 }
 
@@ -182,7 +189,7 @@ profile-photo .img{
   flex-basis: 60%;
 }
 .about-content h4{
-  color: #fed700;
+  color: var(--primary-color);
   font-size: 40px;
   line-height: 70px;
   text-transform: capitalize;
@@ -231,7 +238,7 @@ profile-photo .img{
   box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
 }
 .btn.active{
-  border-color: #fed700;
+  border-color: var(--primary-color);
 }
 
 
@@ -245,7 +252,7 @@ profile-photo .img{
 }
 
 .education-content .title{
-  color: #fed700;
+  color: var(--primary-color);
 }
 .education-content .row .education,
 .education-content .row .internship
@@ -292,7 +299,7 @@ profile-photo .img{
   height: 100%;
   left: 7px;
   top: 0;
-  background-color: #fed700;  
+  background-color: var(--primary-color);  
 }
 .education-content .row .circle-dot{
   position: absolute;
@@ -334,7 +341,7 @@ profile-photo .img{
   text-transform: uppercase;
   font-size: 40px;
   line-height: 40px;
-  color: #fed700;
+  color:var(--primary-color);
   margin-bottom: 20px;
 }
 .project-title p{
@@ -358,7 +365,7 @@ profile-photo .img{
     transition: .3s;
 }
 .project i{
-  background-color: #fed700;
+  background-color:var(--primary-color);
   width: 60px;
   height: 60px;
   color: #333;
@@ -367,6 +374,7 @@ profile-photo .img{
   border-radius: 50%;
 }
 .project h4{
+  line-height:1;
   font-size: 26px;
   text-transform: capitalize;
   margin: 20px 0;
@@ -375,7 +383,21 @@ profile-photo .img{
   text-align: justify;
 }
 .project:hover{
-  border-color: #fed700;
+  border-color: var(--primary-color);
+}
+
+.demo-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color:var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+.demo-button:hover {
+  background-color:aquamarine;
 }
 
 
@@ -389,7 +411,7 @@ profile-photo .img{
 .contact-content .contact-title h4{
   font-size: 40px;
   text-transform: capitalize;
-  color: #fed700;
+  color:var(--primary-color);
   padding-bottom: 10px;
 }
 .contact-content .contact-title p{
@@ -408,7 +430,7 @@ profile-photo .img{
 
 .contact .submit{
   width: auto;
-  background-color: #fed700;
+  background-color:var(--primary-color);
   padding: 10px 40px;
   font-weight:bold ;
   font-size: 18px;
@@ -533,3 +555,127 @@ profile-photo .img{
 
 }
 
+
+
+/* Skills Section */
+.skills-section {
+  color: #fff; /* White text */
+  padding: 60px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 28px;
+  color: var(--primary-color); /* Yellow color */
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+/* Skills Content */
+.skills-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Skill Category */
+.skill-category {
+  flex: 1;
+  min-width: 250px;
+  background-color: #333; /* Dark gray background */
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.category-title {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: var(--primary-color); /* Yellow color */
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skill-item {
+  font-size: 16px;
+  color: #fff;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for skill items */
+.skill-item:hover {
+  background-color: var(--primary-color); /* Yellow background on hover */
+  color: #000; /* Black text on hover */
+  cursor: pointer;
+}
+
+/*  testi */
+
+.testimonial-content {
+  padding: 50px 0;
+  margin-top: 2rem;
+  /* background-color: #f9f9f9; */
+}
+
+.testimonial-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testimonial-title h4 {
+  color: var(--primary-color);
+  font-size: 2.8rem;
+}
+
+.testimonial-title p{
+  color: white;
+  padding-top: 24px;
+}
+
+.testimonials {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  /* flex-wrap: wrap;/ */
+}
+.testimonial {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 380px;
+  height: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial h4 {
+  padding-top: 14px;
+}
+
+.testimonial p {
+  padding-top: 16px;
+}
+
+.testimonial i {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #333;
+}
