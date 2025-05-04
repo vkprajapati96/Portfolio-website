@@ -356,6 +356,7 @@ profile-photo .img{
     /* padding: 30px 15px; */
     color: #e5e5e5;
     border: 2px solid #e5e5e5;
+    margin-bottom: 1rem;
     border-radius: 10px;
     width: 100%;
     position: relative;
